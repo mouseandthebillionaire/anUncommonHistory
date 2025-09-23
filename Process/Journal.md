@@ -6,7 +6,7 @@ The general idea here is a more ambiguous, experiential, and non-linear experien
 
 At ICMC, I was especially taken with Christina Campanella's [Traces](https://explore.echoes.xyz/collections/6UbRIosluXC02wMw). The composing is excellent, but also the way that the sounds come in and out and interlace with each other is really quite nice. This new piece is going to be highly inspired by Christina's piece. Additionally, recognizing the way that less obvious sound presentation could contribute to a contemplative experience, created some ideas for possible presentation. Eventually I settled on the idea of overlaying a number of complex sounds (narration, field-recording, music) over a given area. I decided on the Seagram building's block in NYC (52nd to Lex to 53rd to Park) because of the potential history there as well as my own personal connection to the building and area. 
 
-![[Media/initialEcho.png]]
+![Initial Map](Media/initialEcho.png)
 
 With all this in mind, the stated goals for this project are:
 - Ambiguous sounds - maybe it isn't even possible to discern what the stories are about, or maybe they only get louder if you stay in one position for long enough, actively choosing with your body what to focus on by keeping still
