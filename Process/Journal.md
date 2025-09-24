@@ -17,7 +17,25 @@ With all this in mind, the stated goals for this project are:
 - Experiential spatial storytelling - the participant might not know the full extent of the story presented, but through the experience has gleaned some aspect
 
 There's a lot here. First steps will be to come up with a list of potential sonic cues/items. Next.
+## 09.24.25 | Initial Ideas
 
+A quick list of things that come to mind as possible sound cues:
+- Brent taking about the closing of the Four Seasons and the subsequent auction 
+- [that 99pi story about the Citicorp building](https://99percentinvisible.org/episode/structural-integrity/)
+- Interviews with doormen
+- Audio from [The Social Life of Small Urban Spaces](https://www.youtube.com/watch?v=5QkJkT3M-Us)
+- Field recordings
+- Audio from St Patricks (choir, mass, etc)
+- A sonic art-piece in the Seagram courtyard (in the places that they display art)
+- Snow, different weather in general
+- Holiday sounds
+- Tenements / Residential sounds
+- Racket Club
+- Grand Central
+- The story of Andy and I sitting on the median
+- Lever House
+
+Next step is to do some deep research to find out what exactly had been on the block over the last 500 years. I will experiment with leveraging ChatGPT Pro to help in the data collection, which will hopefully lead to some interesting finds. This will then of course inform new ideas for possible sounds.
 ## Notes
 
 [^1]: Should eventually move this to its own PB approved WHY document, but for now this feels like a good place to start the WHY juices/conversation flowing)
