@@ -25,7 +25,7 @@ A quick list of things that come to mind as possible sound cues:
 - Interviews with doormen
 - Audio from [The Social Life of Small Urban Spaces](https://www.youtube.com/watch?v=5QkJkT3M-Us)
 - Field recordings
-- Audio from St Patricks (choir, mass, etc)
+- Audio from St Patrick's (choir, mass, etc)
 - A sonic art-piece in the Seagram courtyard (in the places that they display art)
 - Snow, different weather in general
 - Holiday sounds
@@ -54,14 +54,33 @@ Some highlights:
 There's tons of linked out maps and resources which are going to be really fun to go through. Some initial thoughts from looking at the maps:
 - There is a [St. Zita's Home](https://en.wikipedia.org/wiki/Ellen_O%27Keefe) listed on Plate 78 of the 1923 [Bromley "Land Books"](https://digitalcollections.nypl.org/items/cc464800-45a0-0132-628a-58d385a7bbd0?canvasIndex=0)[^3] in addition to the YWCA, meaning that there was a pretty big presence of caring for women on this particular block.
 - The [Sanborn Fire Insurance Map](https://www.arcgis.com/apps/instant/interactivelegend/index.html?appid=9057c35cdabe4c57b821aac42fa33d1f)[^4] from 1892 shows the Steinway manufacturing but also stables in the middle of where the plaza is now, a hospital (which I can't find any other record of), and a carpenter shop across on the SW corner of Park and 52nd
-- [This Map from 1854](https://digitalcollections.nypl.org/items/4690ca20-c603-012f-4a1b-58d385a7bc34?canvasIndex=0) shows that the space was stables for the 4th Avenue Stagecoach (!!) Line
+- [This Map from 1854](https://digitalcollections.nypl.org/items/4690ca20-c603-012f-4a1b-58d385a7bc34?canvasIndex=0) shows that the space was stables for the 4th Avenue Stagecoach (!!) Line [^5]
 - This is a legit rabbit hole
 
 Obviously there's a lot of sound-based stuff that can come out of this research. I think the next steps are to roughly block out which sections are telling which 'story' of the block. After that it'll be time to start composing.
 
+## 12.01.25 | Pick it Up!
+
+Getting back to this after the [Eikon](https://github.com/mouseandthebillionaire/eikon) sprint I did through October and November. 
+
+First thing I did (and it took most of the day) was piece together these three maps from 1857, 1892, and 1923.
+
+![Lionel Pincus and Princess Firyal Map Division, The New York Public Library. "Map bounded by East 57th Street, Second Avenue, East 52nd Street, Fourth Avenue, Plate 83, 84, 106 and 107" New York Public Library Digital Collections. Accessed December 1, 2025. https://digitalcollections.nypl.org/items/25179470-c603-012f-847a-58d385a7bc34](Media/detail_williamPerrisMap_1857.jpg)
+![Sanborn Fire Insurance Map from New York, Bronx, Manhattan, New York. Sanborn Map Company, - 1902 Vol. 6, 1892, 1892. Map. https://www.loc.gov/item/sanborn06116_007/.](Media/detail_sanbornFireMap_1892.jpg)
+![Lionel Pincus and Princess Firyal Map Division, The New York Public Library. "detail - Plate 78 and 84: Bounded by E. 53rd Street, Third Avenue, E. 47th Street and Fifth Avenue" New York Public Library Digital Collections. Accessed December 1, 2025. https://digitalcollections.nypl.org/items/cc464800-45a0-0132-628a-58d385a7bbd0](Media/detail_plate78and84_bromleyLandBooks_1923.jpg)
+
+It's interesting to spend so much time thinking about and looking at these visual representations that no one who experiences the walk is going to see. But it's definitely the important background work for me to get a handle on how I want to lay this out. I think from these composites (which I also have laid out on top of each other in a PSD file) I will create my own map of what sounds are going to go where and then start recording/gathering.
+
+Additionally, I have been recently [listening](https://caroline.bandcamp.com/album/caroline-2) to a [bunch](https://matmos.bandcamp.com/album/metallic-life-review) of [albums](https://worldofechomusic.bandcamp.com/album/l-uten-der-seele-unterhaltungen-mit-larven-und-berresten) that have interesting uses of found sound / musique concrete / sound collage vibes, and I think that is influencing the initial sonic goal for this. Namely, I am imagining this more as a musical composition where the different disparate effects are come in and out in a (somewhat) coherent way, focusing on the musicality of the entire experience. In other words: an interactive sound collage VS traditional soundwalk. Should be a fun thing to work on.
+
 ## Notes
 
 [^1]: Should eventually move this to its own PB approved WHY document, but for now this feels like a good place to start the WHY juices/conversation flowing)
+
 [^2]: Which would be a great name for the piece maybe? Block 1307. Even just 1307. Can you change the names of projects on GitHub? Probably, yeah?
+
 [^3]: Lionel Pincus and Princess Firyal Map Division, The New York Public Library. "Plate 78: [Bounded by E. 53rd Street, Third Avenue, E. 47th Street and Fifth Avenue]" New York Public Library Digital Collections. Accessed September 26, 2025. https://digitalcollections.nypl.org/items/cc464800-45a0-0132-628a-58d385a7bbd0
+
 [^4]: Sanborn Fire Insurance Map from New York, Bronx, Manhattan, New York. Sanborn Map Company, - 1902 Vol. 4, 1899, 1899. Map. https://www.loc.gov/item/sanborn06116_004/.
+
+[^5]: I don't know what happened, but as of 12.01.25 I can NOT find this image anymore. All the maps from this archive now stop at 42nd...
