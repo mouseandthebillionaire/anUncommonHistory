@@ -223,16 +223,32 @@
             trackCard.className = 'track-card';
             
             const audio = document.createElement('audio');
-            // Use raw GitHub URLs for reliable file access
-            audio.src = `https://github.com/${githubRepo}/raw/refs/heads/${githubBranch}/Audio/Tracks/${trackName}`;
+            // Use raw.githubusercontent.com for direct file access (more reliable than github.com/raw)
+            audio.src = `https://raw.githubusercontent.com/${githubRepo}/${githubBranch}/Audio/Tracks/${trackName}`;
             audio.loop = true;
             audio.preload = 'auto';
-            audio.crossOrigin = 'anonymous';
+            // Note: GitHub raw files don't support CORS, so we don't set crossOrigin
+            // This should work for basic audio playback
             
-            // Error handling
+            // Error handling with more details
             audio.addEventListener('error', (e) => {
                 console.error(`Error loading track ${trackName}:`, e);
                 console.error('Audio error details:', audio.error);
+                console.error('Audio src:', audio.src);
+                if (audio.error) {
+                    console.error('Error code:', audio.error.code);
+                    console.error('Error message:', audio.error.message);
+                }
+            });
+            
+            // Log when audio can play (for debugging)
+            audio.addEventListener('canplay', () => {
+                console.log(`Track ${trackName} ready to play`);
+            });
+            
+            // Log loading progress
+            audio.addEventListener('loadstart', () => {
+                console.log(`Loading ${trackName}...`);
             });
             
             // Try to load the audio
