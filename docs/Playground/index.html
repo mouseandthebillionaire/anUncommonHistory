@@ -196,8 +196,14 @@
     </div>
 
     <script>
+        // GitHub Pages base path - auto-detect from current URL
+        // For project pages (repo "1307"): extracts "/1307" from "/1307/Playground/"
+        // For user/organization pages: will be empty string
+        const pathParts = window.location.pathname.split('/').filter(p => p);
+        const basePath = pathParts.length > 1 ? '/' + pathParts[0] : '';
+        
         // List of track files - update this when adding new tracks
-                                const tracks = [
+                        const tracks = [
             'ghostOrgan.wav',
             'jitteryPad.wav',
             'piano_complex.wav',
@@ -219,8 +225,9 @@
             trackCard.className = 'track-card';
             
             const audio = document.createElement('audio');
-            // Path relative to docs/Playground directory - go up two levels to project root, then into Audio/Tracks
-            audio.src = `../../Audio/Tracks/${trackName}`;
+            // Use base path for GitHub Pages compatibility
+            // Works for both project pages (/repo-name/) and user pages (root)
+            audio.src = `${basePath}/Audio/Tracks/${trackName}`;
             audio.loop = true;
             audio.preload = 'auto';
             audio.crossOrigin = 'anonymous';
