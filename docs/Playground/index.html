@@ -196,12 +196,8 @@
     </div>
 
     <script>
-        // GitHub repository configuration
-        const githubRepo = 'mouseandthebillionaire/1307';
-        const githubBranch = 'main';
-        
         // List of track files - update this when adding new tracks
-                        const tracks = [
+                                const tracks = [
             'ghostOrgan.wav',
             'jitteryPad.wav',
             'piano_complex.wav',
@@ -223,12 +219,10 @@
             trackCard.className = 'track-card';
             
             const audio = document.createElement('audio');
-            // Use raw.githubusercontent.com for direct file access (more reliable than github.com/raw)
-            audio.src = `https://raw.githubusercontent.com/${githubRepo}/${githubBranch}/Audio/Tracks/${trackName}`;
+            // Use relative path to Tracks folder in same directory as index.html
+            audio.src = `Tracks/${trackName}`;
             audio.loop = true;
             audio.preload = 'auto';
-            // Note: GitHub raw files don't support CORS, so we don't set crossOrigin
-            // This should work for basic audio playback
             
             // Error handling with more details
             audio.addEventListener('error', (e) => {

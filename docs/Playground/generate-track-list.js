@@ -3,8 +3,8 @@
 const fs = require('fs');
 const path = require('path');
 
-// Path from docs/Playground to Audio/Tracks (go up two levels, then into Audio/Tracks)
-const tracksDir = path.join(__dirname, '../../Audio/Tracks');
+// Path to Tracks folder in same directory as this script
+const tracksDir = path.join(__dirname, 'Tracks');
 const htmlFile = path.join(__dirname, 'index.html');
 
 // Read all .wav files from Tracks directory
