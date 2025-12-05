@@ -73,6 +73,24 @@ It's interesting to spend so much time thinking about and looking at these visua
 
 Additionally, I have been recently [listening](https://caroline.bandcamp.com/album/caroline-2) to a [bunch](https://matmos.bandcamp.com/album/metallic-life-review) of [albums](https://worldofechomusic.bandcamp.com/album/l-uten-der-seele-unterhaltungen-mit-larven-und-berresten) that have interesting uses of found sound / musique concrete / sound collage vibes, and I think that is influencing the initial sonic goal for this. Namely, I am imagining this more as a musical composition where the different disparate effects are come in and out in a (somewhat) coherent way, focusing on the musicality of the entire experience. In other words: an interactive sound collage VS traditional soundwalk. Should be a fun thing to work on.
 
+## 12.05.25 | Sonic Playground
+
+![Screenshot of the Audio Playground utility](Media/playground.png)
+
+As I was preparing for my meeting with PJB yesterday, I began thinking about the difficulties of sharing the audio process away from the utility (or really with anyone who isn't intimate with the project/process) Maybe difficulty is too strong a word. Missed opportunity for feedback? Complication? Anyway, I thought it might be interesting to build an online mixer version of how I deal with these tracks in Ableton Live, so I knocked something together real quick in Cursor. They're already getting mixed down to their stems for the final project, why not put them in something that an outside participant can then play with in a fairly intuitive way[^6]. Not sure how useful this will actually be in practice (or how far I want to push it - I already have a ton of ideas of where it could go), but it's a super low overhead to copy the tracks to the folder for this web app so at the very least I will continue to do so as I work on the audio. This should also give us a more-easily accessible historical record of where the soundscape was throughout the project, which feels like a plus.
+
+Next:
+* Start gathering non-musical audio based on the research and ideas from earlier. Might be a good idea to do a roundup journal entry to list these out as I'm thinking about what to gather.
+* Keep filling out the soundtracky musical bit. I would like to maybe explore the possibility of some sort of progression throughout the space. So, rather than _adding_ instruments like I did for [An Invitation to Play](https://www.mouseandthebillionaire.com/aitp/), the (core) instruments remain the same, but their _parts_ change? Or perhaps a combination of both?
+* Specifically for the piano, I would like to build a series of concentric circles of tracks within the Seagram building plaza (where the piano manufacturing actually happened) and have them build on each other so that: inner circle = most complex and as you move further from that epicentre the notes drop away (maybe even to a single repeating note?) This involves separating out the existing midi information to multiple tracks (which is a bit of a pain, admittedly) but I could also just try rerecording something into a few tracks and see what serendipitous sounds come out.
+
+Side note: I don't know if it's an Obsidian update or one of the plugins I installed for thesis and/or analysis work, but footnoting has gotten supercharged and is a real joy[^7]
+
+![Obsidian asking if I want a new footnote](Media/footnote0.png)
+
+![I do](Media/footnote1.png)
+
+
 ## Notes
 
 [^1]: Should eventually move this to its own PB approved WHY document, but for now this feels like a good place to start the WHY juices/conversation flowing)
@@ -83,4 +101,8 @@ Additionally, I have been recently [listening](https://caroline.bandcamp.com/alb
 
 [^4]: Sanborn Fire Insurance Map from New York, Bronx, Manhattan, New York. Sanborn Map Company, - 1902 Vol. 4, 1899, 1899. Map. https://www.loc.gov/item/sanborn06116_004/.
 
-[^5]: I don't know what happened, but as of 12.01.25 I can NOT find this image anymore. All the maps from this archive now stop at 42nd...
+[^5]: I don't know what happened, but as of 12.01.25 I can NOT find this image anymore. All the maps from this archive now stop at 42nd... (follow-up: I wonder if I was mistaken and the city doesn't actually have maps that go that far north. There _does_ seem to be a stable at 34th (which is the map I do have in my documents folder))
+
+[^6]: Strangely enough, this ends up being really similar to the [Auldvent](https://www.mouseandthebillionaire.com/auldvent/) project that I built last year
+
+[^7]: See!
