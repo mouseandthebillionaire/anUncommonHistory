@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "fc9d1e2929f68549",
+    "type": "split",
+    "children": [
+      {
+        "id": "ffee2689092d4451",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29a84e40e46155e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Process/Journal.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Journal"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6595c348e260a1b7",
+    "type": "split",
+    "children": [
+      {
+        "id": "22850a1ac3195967",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "74c6e0a626b3a074",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "bacfd7541da80002",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d9ae37dff860c519",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "aeb4c44ecb708a5e",
+    "type": "split",
+    "children": [
+      {
+        "id": "0dde137405033abc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7ef0090df6bd9f5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Process/Journal.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Journal"
+            }
+          },
+          {
+            "id": "38c844a9f5b8a0d1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Process/Journal.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Journal"
+            }
+          },
+          {
+            "id": "27a28e1884ec2acf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e3bbc70373a3e0eb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Process/Journal.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Journal"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "29a84e40e46155e4",
+  "lastOpenFiles": [
+    "().md",
+    "Process/Journal.md",
+    "Process/Media/footnote1.png",
+    "Process/Media/Screenshot 2025-12-05 at 09.19.32.png",
+    "Process/Media/footnote0.png",
+    "Process/Media/Screenshot 2025-12-05 at 09.19.11.png",
+    "Process/Media/detail_williamPerrisMap_1857.jpg",
+    "Process/Media/detail_1857.jpg",
+    "Process/Media/1857.jpg",
+    "ProjectFiles/1857_107.jpg",
+    "ProjectFiles/1857_84.jpg",
+    "ProjectFiles/1852_107.jpg",
+    "ProjectFiles/master-gmd-gmd380m-g3804m-g3804nm-g3804nm_g06116189904-06116_04_1899-0083L.tif",
+    "ProjectFiles/service-gmd-gmd380m-g3804m-g3804nm-g3804nm_g06116189904-06116_04_1899-0083L copy 2.jp2",
+    "ProjectFiles/service-gmd-gmd380m-g3804m-g3804nm-g3804nm_g06116189904-06116_04_1899-0083L copy.jp2",
+    "ProjectFiles/service-gmd-gmd380m-g3804m-g3804nm-g3804nm_g06116189206-06116_06_1892-0107L copy.jp2",
+    "ProjectFiles/plate78.jpg.sb-ea396d06-3NKXNF",
+    "Audio/auh_score Project/auh_score.als",
+    "Audio/auh_score Project/AbletonTmp-0000",
+    "Audio/auh_score Project/Icon\r",
+    "Audio/auh_score Project/Ableton Project Info",
+    "Audio/auh_score Project",
+    "Process/Research.md",
+    "README.md",
+    "Media.md"
+  ]
+}

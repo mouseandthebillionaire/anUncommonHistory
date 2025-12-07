@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- run node docs/Playground/generate-track-list.js to generate the track list -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Playground</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #d0d0d0;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #f0f0f0;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            padding: 0.75rem 2rem;
+            background: rgba(60, 60, 60, 0.6);
+            border: 1px solid rgba(100, 100, 100, 0.3);
+            color: #e0e0e0;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        button:hover {
+            background: rgba(255, 20, 147, 0.2);
+            border-color: rgba(255, 20, 147, 0.5);
+            color: #ff69b4;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .tracks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .track-card {
+            background: rgba(40, 40, 40, 0.6);
+            border: 1px solid rgba(80, 80, 80, 0.3);
+            border-radius: 16px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .track-card:hover {
+            background: rgba(50, 50, 50, 0.8);
+            border-color: rgba(255, 20, 147, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(255, 20, 147, 0.2);
+        }
+
+        .track-name {
+            font-size: 0.9rem;
+            color: #a0a0a0;
+            text-align: center;
+            word-break: break-word;
+            font-weight: 500;
+        }
+
+        .volume-control {
+            position: relative;
+            width: 120px;
+            height: 120px;
+        }
+
+        .volume-dial {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(
+                from 0deg,
+                rgba(255, 20, 147, 0.4) 0%,
+                rgba(255, 20, 147, 0.4) var(--volume-percent, 0%),
+                rgba(60, 60, 60, 0.3) var(--volume-percent, 0%),
+                rgba(60, 60, 60, 0.3) 100%
+            );
+            border: 3px solid rgba(100, 100, 100, 0.4);
+            position: relative;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .volume-dial:hover {
+            border-color: rgba(255, 20, 147, 0.6);
+        }
+
+        .volume-dial::before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #ff69b4;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            margin-left: -4px;
+            margin-top: -60px;
+            transform: rotate(calc(var(--angle, -90) * 1deg));
+            transform-origin: 4px 60px;
+            box-shadow: 0 0 8px rgba(255, 20, 147, 0.8);
+        }
+
+        .volume-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #f0f0f0;
+            pointer-events: none;
+        }
+
+        .playback-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ff69b4;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .playback-indicator.playing {
+            opacity: 1;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.7;
+            }
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AUDIO PLAYGROUND</h1>
+        
+        <div class="controls">
+            <button id="playAll">Play All</button>
+            <button id="stopAll">Stop All</button>
+        </div>
+
+        <div class="tracks-grid" id="tracksGrid"></div>
+    </div>
+
+    <script>
+        // List of track files - update this when adding new tracks
+                                const tracks = [
+            'ghostOrgan.wav',
+            'jitteryPad.wav',
+            'piano_complex.wav',
+            'subBass.wav',
+            'weirdCityPad.wav'
+        ];
+
+        const tracksGrid = document.getElementById('tracksGrid');
+        const playAllBtn = document.getElementById('playAll');
+        const stopAllBtn = document.getElementById('stopAll');
+        
+        let audioElements = [];
+        let isPlaying = false;
+        let masterStartTime = null;
+
+        // Create track cards
+        tracks.forEach((trackName, index) => {
+            const trackCard = document.createElement('div');
+            trackCard.className = 'track-card';
+            
+            const audio = document.createElement('audio');
+            // Use relative path to Tracks folder in same directory as index.html
+            audio.src = `Tracks/${trackName}`;
+            audio.loop = true;
+            audio.preload = 'auto';
+            
+            // Error handling with more details
+            audio.addEventListener('error', (e) => {
+                console.error(`Error loading track ${trackName}:`, e);
+                console.error('Audio error details:', audio.error);
+                console.error('Audio src:', audio.src);
+                if (audio.error) {
+                    console.error('Error code:', audio.error.code);
+                    console.error('Error message:', audio.error.message);
+                }
+            });
+            
+            // Log when audio can play (for debugging)
+            audio.addEventListener('canplay', () => {
+                console.log(`Track ${trackName} ready to play`);
+            });
+            
+            // Log loading progress
+            audio.addEventListener('loadstart', () => {
+                console.log(`Loading ${trackName}...`);
+            });
+            
+            // Try to load the audio
+            audio.load();
+            
+            audioElements.push(audio);
+            
+            const trackNameDiv = document.createElement('div');
+            trackNameDiv.className = 'track-name';
+            trackNameDiv.textContent = trackName.replace('.wav', '').replace(/([A-Z])/g, ' $1').trim();
+            
+            const volumeControl = document.createElement('div');
+            volumeControl.className = 'volume-control';
+            
+            const volumeDial = document.createElement('div');
+            volumeDial.className = 'volume-dial';
+            volumeDial.style.setProperty('--volume-percent', '100%');
+            // Initial angle: 100% volume = 360deg gradient end = 270deg rotation + 90deg offset
+            volumeDial.style.setProperty('--angle', '360');
+            
+            const volumeLabel = document.createElement('div');
+            volumeLabel.className = 'volume-label';
+            volumeLabel.textContent = '100';
+            
+            const playbackIndicator = document.createElement('div');
+            playbackIndicator.className = 'playback-indicator';
+            
+            volumeDial.appendChild(volumeLabel);
+            volumeControl.appendChild(volumeDial);
+            volumeControl.appendChild(playbackIndicator);
+            
+            trackCard.appendChild(trackNameDiv);
+            trackCard.appendChild(volumeControl);
+            trackCard.appendChild(audio);
+            
+            tracksGrid.appendChild(trackCard);
+            
+            // Volume control
+            let isDragging = false;
+            let volume = 1.0;
+            
+            const updateVolume = (clientX, clientY) => {
+                const rect = volumeDial.getBoundingClientRect();
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
+                const x = clientX - centerX;
+                const y = clientY - centerY;
+                
+                let angle = Math.atan2(y, x) * (180 / Math.PI);
+                // Convert to 0-360 range starting from top (0deg = top, clockwise)
+                angle = (angle + 90 + 360) % 360;
+                
+                volume = Math.max(0, Math.min(1, angle / 360));
+                audio.volume = volume;
+                
+                const percent = Math.round(volume * 100);
+                // Set gradient fill percentage (0% to 100% of circle)
+                volumeDial.style.setProperty('--volume-percent', `${percent}%`);
+                // Rotate dot to match gradient end point exactly
+                // Gradient fills from 0deg (top) clockwise, ending at (percent * 360 / 100) degrees
+                // Dot rotation: -90deg (top) + gradient end angle + 90deg offset to align
+                const gradientEndAngle = (percent / 100) * 360;
+                const dotRotation = gradientEndAngle - 90 + 90;
+                volumeDial.style.setProperty('--angle', `${dotRotation}`);
+                volumeLabel.textContent = percent;
+            };
+            
+            volumeDial.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                updateVolume(e.clientX, e.clientY);
+            });
+            
+            document.addEventListener('mousemove', (e) => {
+                if (isDragging) {
+                    updateVolume(e.clientX, e.clientY);
+                }
+            });
+            
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+            
+            // Touch support
+            volumeDial.addEventListener('touchstart', (e) => {
+                e.preventDefault();
+                isDragging = true;
+                const touch = e.touches[0];
+                updateVolume(touch.clientX, touch.clientY);
+            });
+            
+            document.addEventListener('touchmove', (e) => {
+                if (isDragging) {
+                    e.preventDefault();
+                    const touch = e.touches[0];
+                    updateVolume(touch.clientX, touch.clientY);
+                }
+            });
+            
+            document.addEventListener('touchend', () => {
+                isDragging = false;
+            });
+            
+            // Playback indicator
+            audio.addEventListener('play', () => {
+                playbackIndicator.classList.add('playing');
+            });
+            
+            audio.addEventListener('pause', () => {
+                playbackIndicator.classList.remove('playing');
+            });
+        });
+
+        // Synchronized playback
+        async function playAll() {
+            if (isPlaying) return;
+            
+            // Wait for all audio elements to be ready
+            const readyPromises = audioElements.map((audio, index) => {
+                return new Promise((resolve, reject) => {
+                    if (audio.readyState >= 2) { // HAVE_CURRENT_DATA
+                        resolve();
+                    } else {
+                        audio.addEventListener('canplay', () => resolve(), { once: true });
+                        audio.addEventListener('error', () => reject(new Error(`Track ${index} failed to load`)), { once: true });
+                        // Timeout after 5 seconds
+                        setTimeout(() => reject(new Error(`Track ${index} load timeout`)), 5000);
+                    }
+                });
+            });
+            
+            try {
+                await Promise.all(readyPromises);
+            } catch (error) {
+                console.error('Some tracks failed to load:', error);
+                alert('Some audio files failed to load. Check the browser console for details.');
+            }
+            
+            isPlaying = true;
+            
+            // Reset all tracks to start
+            audioElements.forEach(audio => {
+                audio.currentTime = 0;
+            });
+            
+            // Play all tracks with slight delay for better synchronization
+            const playPromises = audioElements.map((audio, index) => {
+                const playPromise = audio.play();
+                if (playPromise !== undefined) {
+                    return playPromise.catch(error => {
+                        console.error(`Error playing track ${index}:`, error);
+                        isPlaying = false;
+                    });
+                }
+                return Promise.resolve();
+            });
+            
+            try {
+                await Promise.all(playPromises);
+            } catch (error) {
+                console.error('Playback error:', error);
+            }
+        }
+
+        function stopAll() {
+            isPlaying = false;
+            masterStartTime = null;
+            
+            audioElements.forEach(audio => {
+                audio.pause();
+                audio.currentTime = 0;
+            });
+        }
+
+        playAllBtn.addEventListener('click', playAll);
+        stopAllBtn.addEventListener('click', stopAll);
+
+        // Initialize volumes
+        audioElements.forEach(audio => {
+            audio.volume = 1.0;
+        });
+    </script>
+</body>
+</html>
+
