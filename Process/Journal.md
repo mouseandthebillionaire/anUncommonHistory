@@ -89,6 +89,35 @@ Side note: I don't know if it's an Obsidian update or one of the plugins I insta
 
 ![I do](Media/footnote1.png)
 
+## 12.07.25 | Sound Thinking
+
+Spending a few minutes today organizing my thoughts and getting all the sounds I need in a list.
+
+- Social life of small urban spaces audio (maybe watch this with the kids, just for fun)
+- The sound of snow / the sound of rain (would be better to eventually have it from a given location (like I did in Boston) but for now, maybe just generic "city" rain, snow, crowds (far off parades?), etc)
+- Sounds of tenements (should be able to find something for this in the [Internet Archive](https://archive.org/details/movies?tab=collection&query=nyc+tenements)
+- Swimming pool
+- Record the story of Andy and I (again, would be better if I could get Andy to do it. I'll see if I can get a voice note)
+- Animals
+	- Squirrel
+	- Schrew
+	- Beaver
+	- Cottentail (do they make sounds?)
+	- Beaver
+	- Red-tailed hawk
+	- Jay
+	- Robin
+	- Towhee
+	- Wild turkey
+	- Wren
+	- Horse stables
+* Sounds of a river/stream (old maps show a river bend was right at this spot)
+* 1830-1888 era railroad sounds (what would that sound like? What kind of trains would they have used?)
+* 1912-1956 era apartment building sounds
+* Four Seasons sounds? (is there anything useful [here](https://www.youtube.com/results?search_query=four+seasons+restaurant+new+york) - this [Martha Stewart and Julian Niccolini "tea"](https://www.youtube.com/watch?v=CuM-N3ejUOo) is pretty great)
+
+
+PS - Happy [St. Tom's Day](https://www.youtube.com/watch?v=vGpwgHqlfWo&list=RDvGpwgHqlfWo&start_radio=1) to those who celebrate
 
 ## Notes
 
