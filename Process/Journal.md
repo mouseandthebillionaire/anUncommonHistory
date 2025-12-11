@@ -116,6 +116,9 @@ Spending a few minutes today organizing my thoughts and getting all the sounds I
 * 1912-1956 era apartment building sounds
 * Four Seasons sounds? (is there anything useful [here](https://www.youtube.com/results?search_query=four+seasons+restaurant+new+york) - this [Martha Stewart and Julian Niccolini "tea"](https://www.youtube.com/watch?v=CuM-N3ejUOo) is pretty great)
 
+PS - Happy [St. Tom's Day](https://www.youtube.com/watch?v=vGpwgHqlfWo&list=RDvGpwgHqlfWo&start_radio=1) to those who celebrate
+
+
 ## 12.09.25 | Planning
 
 Started gathering sounds and found myself falling down a bit of a rabbit hole asking questions like:
@@ -142,8 +145,6 @@ Here we go.
 ![the first version](Media/v1.png)
 
 I've got the first version up on Echoes and will be testing it in NYC this weekend. There's not quite as much _musical_ stuff happening here, but I'm hoping that doing the cycle a few times will give me some ideas for where to take it next. I'm also bringing my mic so I can do some field-recordings. I think that these will be standing still (rather than the Cardiffian-style walking recordings that I did for the Boston soundwalk). I like the idea of discrete stops along the way that present the space as it sounds at certain times of day/year/eras. What if this was a living document that I came back to every decade or so, recording the sound of the block at that specific time?
-
-PS - Happy [St. Tom's Day](https://www.youtube.com/watch?v=vGpwgHqlfWo&list=RDvGpwgHqlfWo&start_radio=1) to those who celebrate
 
 ## Notes
 
