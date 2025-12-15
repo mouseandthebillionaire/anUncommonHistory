@@ -146,6 +146,33 @@ Here we go.
 
 I've got the first version up on Echoes and will be testing it in NYC this weekend. There's not quite as much _musical_ stuff happening here, but I'm hoping that doing the cycle a few times will give me some ideas for where to take it next. I'm also bringing my mic so I can do some field-recordings. I think that these will be standing still (rather than the Cardiffian-style walking recordings that I did for the Boston soundwalk). I like the idea of discrete stops along the way that present the space as it sounds at certain times of day/year/eras. What if this was a living document that I came back to every decade or so, recording the sound of the block at that specific time?
 
+## 12.09.25 | Planning
+
+Started gathering sounds and found myself falling down a bit of a rabbit hole asking questions like:
+
+- "What was the size, exactly, of the room with the YMCA swimming pool? That would change the reverberations, obviously!"
+- "Were kids allowed in the YMCA swimming pool? A lot of these samples I'm finding have kids in them!"
+- "Do apalachian oak-hickory forests sound different than these forests I'm finding audio from in West Virginia?!"
+- "Are these insect sounds true to the time period!?"
+- "Does a Towhee from Manhattan have the same accent as a Towhee from Maine!?"
+- "What train exactly ran down the 4th avenue train line!?"
+
+This culminated in me looking up all these questions and eventually doing [deep-dive research with ChatGPT](Rsearch.md/#train-soundscape-research--120825) to ascertain exactly what train would have been running down the line and how its whistle varies from the more common one we hear in classic Westerns.
+
+Now. This is all fine and good. In fact, this is probably worthwhile for the project, since part of the point is to share a robust and accurate history of a given space.
+
+BUT, as far as testing for this weekend? Not necessary! So, I'm regrouping a bit here and planning on what I actually need to get into the Echos prototype over the next few days. Mainly, I want to use this as an experiment to test wether these sounds coming in and out makes sense (and is a pleasant experiment) so the non-localized sound effects that I have sound will work perfect for that. 
+
+Additionally, I used Claude to build a tool that splits up the complicated piano midi file into (now) six different files which, once combined, gives the whole track. I want to put these into the concentric circles and see if this works like I hope it will.[^8]
+
+Here we go.
+
+## 12.11.25 | Walking Test
+
+![the first version](Media/v1.png)
+
+I've got the first version up on Echoes and will be testing it in NYC this weekend. There's not quite as much _musical_ stuff happening here, but I'm hoping that doing the cycle a few times will give me some ideas for where to take it next. I'm also bringing my mic so I can do some field-recordings. I think that these will be standing still (rather than the Cardiffian-style walking recordings that I did for the Boston soundwalk). I like the idea of discrete stops along the way that present the space as it sounds at certain times of day/year/eras. What if this was a living document that I came back to every decade or so, recording the sound of the block at that specific time?
+
 ## Notes
 
 [^1]: Should eventually move this to its own PB approved WHY document, but for now this feels like a good place to start the WHY juices/conversation flowing)
@@ -161,3 +188,5 @@ I've got the first version up on Echoes and will be testing it in NYC this weeke
 [^6]: Strangely enough, this ends up being really similar to the [Auldvent](https://www.mouseandthebillionaire.com/auldvent/) project that I built last year
 
 [^7]: See!
+
+[^8]: It is not working in the Playground tool right now, which is a bummer, but, again, a problem for another day
