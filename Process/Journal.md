@@ -146,32 +146,20 @@ Here we go.
 
 I've got the first version up on Echoes and will be testing it in NYC this weekend. There's not quite as much _musical_ stuff happening here, but I'm hoping that doing the cycle a few times will give me some ideas for where to take it next. I'm also bringing my mic so I can do some field-recordings. I think that these will be standing still (rather than the Cardiffian-style walking recordings that I did for the Boston soundwalk). I like the idea of discrete stops along the way that present the space as it sounds at certain times of day/year/eras. What if this was a living document that I came back to every decade or so, recording the sound of the block at that specific time?
 
-## 12.09.25 | Planning
+## 12.15.25 | Location Prototype Reflection
 
-Started gathering sounds and found myself falling down a bit of a rabbit hole asking questions like:
+I'm not sure how much there is to say about this on-location test (and I'm exhausted from the trip), but that's part of the job, so:
 
-- "What was the size, exactly, of the room with the YMCA swimming pool? That would change the reverberations, obviously!"
-- "Were kids allowed in the YMCA swimming pool? A lot of these samples I'm finding have kids in them!"
-- "Do apalachian oak-hickory forests sound different than these forests I'm finding audio from in West Virginia?!"
-- "Are these insect sounds true to the time period!?"
-- "Does a Towhee from Manhattan have the same accent as a Towhee from Maine!?"
-- "What train exactly ran down the 4th avenue train line!?"
+- It _sounds_ good? I like the different sounds coming in and out like this. 
+- The geolocation through Echoes was working _horribly_, so much worse than it had been in Boston. It kept thinking I was blocks away from where I actually was, which is obviously less than ideal
+- It was so cold
+- I was able to get field recordings of the four main corners, but I'm not sure how valuable that audio actually is. Mostly just the sounds of people walking by. But I still like the idea of going back over the years and getting decades worth of these recordings.
+- I realized that with the default logic options in the new version of Echoes you could have the music build up over time based on how long the listener is doing the walk. I like the idea of applying this method to the "soundtrack" of the experience, while leaving the field recordings location-based. Could be a fun way to make the overall audio more complex. 
+- Actually being in the space reveals those nooks and doorways which could make interesting audio experience locations (as long as the Echoes geolocation stuff plays nice)
 
-This culminated in me looking up all these questions and eventually doing [deep-dive research with ChatGPT](Rsearch.md/#train-soundscape-research--120825) to ascertain exactly what train would have been running down the line and how its whistle varies from the more common one we hear in classic Westerns.
+I think the next steps is to build on the soundtrack aspect and test again in the new year. 
 
-Now. This is all fine and good. In fact, this is probably worthwhile for the project, since part of the point is to share a robust and accurate history of a given space.
-
-BUT, as far as testing for this weekend? Not necessary! So, I'm regrouping a bit here and planning on what I actually need to get into the Echos prototype over the next few days. Mainly, I want to use this as an experiment to test wether these sounds coming in and out makes sense (and is a pleasant experiment) so the non-localized sound effects that I have sound will work perfect for that. 
-
-Additionally, I used Claude to build a tool that splits up the complicated piano midi file into (now) six different files which, once combined, gives the whole track. I want to put these into the concentric circles and see if this works like I hope it will.[^8]
-
-Here we go.
-
-## 12.11.25 | Walking Test
-
-![the first version](Media/v1.png)
-
-I've got the first version up on Echoes and will be testing it in NYC this weekend. There's not quite as much _musical_ stuff happening here, but I'm hoping that doing the cycle a few times will give me some ideas for where to take it next. I'm also bringing my mic so I can do some field-recordings. I think that these will be standing still (rather than the Cardiffian-style walking recordings that I did for the Boston soundwalk). I like the idea of discrete stops along the way that present the space as it sounds at certain times of day/year/eras. What if this was a living document that I came back to every decade or so, recording the sound of the block at that specific time?
+Moving forward.
 
 ## Notes
 
